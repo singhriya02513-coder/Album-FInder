@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Finder - Discover Music</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🎵 Album Finder</h1>
+            <p class="tagline">Discover Music by Artist</p>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <h2>Find Your Favorite Artist</h2>
+        <p>Search thousands of artists and explore their albums</p>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div id="container">
+        <!-- SEARCH BOX -->
+        <div class="search-box">
+            <input 
+                id="artistInput" 
+                type="text"
+                placeholder="Search artist (e.g., Taylor Swift, Eminem)..."
+                autocomplete="off"
+            >
+            <button id="searchBtn">
+                <span class="btn-text">Search</span>
+                <span class="btn-icon">🔍</span>
+            </button>
+        </div>
+
+        <!-- RESULT AREA -->
+        <div id="result"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Powered by Apple Music (iTunes API) | © 2024 Album Finder</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
