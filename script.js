@@ -5,7 +5,7 @@ const artistInput = document.getElementById("artistInput");
 const searchBtn = document.getElementById("searchBtn");
 const resultDiv = document.getElementById("result");
 
-const API_BASE_URL = `http://localhost:5501`;
+const API_BASE_URL = window.location.origin;
 
 async function searchArtist() {
   const artist = artistInput.value.trim();
@@ -19,7 +19,7 @@ async function searchArtist() {
 
   try {
     const response = await fetch(
-      `${API_BASE_URL}/search-artist?artist=${encodeURIComponent(artist)}`
+      `${API_BASE_URL}/api/search-artist?artist=${encodeURIComponent(artist)}`
     );
 
     if (!response.ok) {
